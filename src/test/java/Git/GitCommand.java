@@ -37,5 +37,12 @@ public class GitCommand {
 	
 	git remove rm origin - to remove origin*/
 	
+	/*GIT STASH:
+	git stash save "text" -to stash local changes
+	git stash list - to see list
+	git stash pop -pops up recent/first stash
+	git stash apply "@stashid"*/
+	
+	
 	
 }

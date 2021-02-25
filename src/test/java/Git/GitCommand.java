@@ -2,7 +2,7 @@ package Git;
 
 public class GitCommand {
 
-	
+	//find the diff
 	
 	
 	//https://dzone.com/articles/top-20-git-commands-with-examples
@@ -44,5 +44,38 @@ public class GitCommand {
 	git stash apply "@stashid"*/
 	
 	
+	//-----------------------------------------------------------------------------------------------------
 	
+	/*
+	1)git init -to initialize the project
+	
+	2)git add . -adds all files to stage 
+	3)git add * -adds one or more
+	4)git add <file> -add particular file
+	
+	5)git status -check files staged or not
+	
+	how to unstage  a staged file
+	
+	git reset -will reset all file from staged env
+	
+	git reset HEAD <path>  -will unstage specified file <HEAD is optional>
+	
+	Note: Recent Git versions (1.8.4.x) have changed this message:
+
+    (use "git rm --cached <file>..." to unstage) ex: git rm --cached src/test/java/Git/GitCommand.java
+
+	ex:
+		In order to unstage the README file, you would execute the following command
+
+		$ git reset -- README
+	
+	In order to remove unstaged changes, use the “git checkout” command and specify the paths to be removed.
+
+        $ git checkout -- <path>
+	
+	git restore src/test/java/Git/GitCommand.java  -to delete changes from working directory
+	
+	
+	*/
 }
